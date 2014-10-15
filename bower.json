@@ -1,0 +1,22 @@
+{
+  "name": "BootstrapGrid",
+  "version": "1.0.0",
+  "authors": [
+    "Rutger Laurman <info@lekkerduidelijk.nl>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.1.0",
+    "html5shiv": "~3.7.0",
+    "modernizr": "~2.7.1",
+    "holderjs": "~2.4.0"
+  }
+}
