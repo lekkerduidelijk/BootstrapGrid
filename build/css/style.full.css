@@ -1,7 +1,7 @@
 /**
- * Less Template
+ * BootstrapGrid
  * @author: Rutger Laurman - lekkerduidelijk.nl
- * @url: https://github.com/lekkerduidelijk/less-template
+ * @url: https://github.com/lekkerduidelijk/BootstrapGrid
  */
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 /* line 9, /www/labs/bootstrapgrid/bower_components/bootstrap/less/normalize.less */
@@ -7012,52 +7012,15 @@ button.close {
     display: none !important;
   }
 }
-/* line 30, /www/labs/bootstrapgrid/source/css/style.less */
-.block {
-  background: #ccc;
-  display: block;
-  min-height: 50px;
-  height: auto;
-  width: 100%;
-  margin: 10px 0;
-  float: left;
-}
-/* line 41, /www/labs/bootstrapgrid/source/css/style.less */
+/* line 13, /www/labs/bootstrapgrid/source/css/style.less */
 h2 {
   text-align: center;
 }
-/* line 44, /www/labs/bootstrapgrid/source/css/style.less */
-.container-1170 {
-  max-width: 1170px;
-  margin: 0 auto;
-}
-/* line 47, /www/labs/bootstrapgrid/source/css/style.less */
-.container-1170 > .container {
-  max-width: 1170px !important;
-}
-/* line 52, /www/labs/bootstrapgrid/source/css/style.less */
-.container-970 {
-  max-width: 970px;
-  margin: 0 auto;
-}
-/* line 55, /www/labs/bootstrapgrid/source/css/style.less */
-.container-970 > .container {
-  max-width: 970px !important;
-}
-/* line 59, /www/labs/bootstrapgrid/source/css/style.less */
-.container-750 {
-  max-width: 750px;
-  margin: 0 auto;
-}
-/* line 62, /www/labs/bootstrapgrid/source/css/style.less */
-.container-750 > .container {
-  max-width: 750px !important;
-}
-/* line 71, /www/labs/bootstrapgrid/source/css/style.less */
+/* line 16, /www/labs/bootstrapgrid/source/css/style.less */
 header {
   text-align: center;
 }
-/* line 74, /www/labs/bootstrapgrid/source/css/style.less */
+/* line 19, /www/labs/bootstrapgrid/source/css/style.less */
 footer {
   margin-top: 40px;
   padding: 40px 0;
@@ -7065,4 +7028,41 @@ footer {
   text-align: center;
   background-color: #f9f9f9;
   border-top: 1px solid #e5e5e5;
+}
+/* line 29, /www/labs/bootstrapgrid/source/css/style.less */
+.block {
+  background: #ccc;
+  display: block;
+  float: left;
+  height: auto;
+  margin: 10px 0;
+  min-height: 50px;
+  width: 100%;
+}
+/* line 40, /www/labs/bootstrapgrid/source/css/style.less */
+.container-1170 {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+/* line 43, /www/labs/bootstrapgrid/source/css/style.less */
+.container-1170 > .container {
+  max-width: 1170px !important;
+}
+/* line 48, /www/labs/bootstrapgrid/source/css/style.less */
+.container-970 {
+  max-width: 970px;
+  margin: 0 auto;
+}
+/* line 51, /www/labs/bootstrapgrid/source/css/style.less */
+.container-970 > .container {
+  max-width: 970px !important;
+}
+/* line 56, /www/labs/bootstrapgrid/source/css/style.less */
+.container-750 {
+  max-width: 750px;
+  margin: 0 auto;
+}
+/* line 59, /www/labs/bootstrapgrid/source/css/style.less */
+.container-750 > .container {
+  max-width: 750px !important;
 }

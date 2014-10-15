@@ -30,7 +30,6 @@ module.exports = function(grunt) {
         src: [
           '**',
           '!**/*.less',
-          // '!**/*.html',
           '!**/css/**',
         ],
         dest: 'build',
@@ -90,15 +89,6 @@ module.exports = function(grunt) {
         src: ['build/**/*.html'],
         dest: 'build/css/style.cleaned.full.css',
         options: {
-          ignore: [
-            '.collapsing', // collapsing
-            /\.fade/, // fade
-            /\.close/, // .close class
-            /\.collapse/, // .collapse prefixed classes
-            /\.modal/, // .modal prefixed classes
-            /\.js\-/, // .js- prefixed classes
-            /\.is\-/, // .is- prefixed classes
-          ],
           htmlroot: 'build',
           stylesheets: ['style.full.css'],
           csspath: 'css/',
@@ -110,14 +100,7 @@ module.exports = function(grunt) {
     concat: {
       base: {
         src: [
-          'bower_components/jquery/jquery.js',
-          'bower_components/modernizr/modernizr.js',
-          // Add more libraries here
-          // 'bower_components/...',
           'bower_components/holderjs/holder.js',
-
-          'source/js/plugins.js',
-          'source/js/main.js',
         ],
         dest: 'build/js/all.full.js',
       },
@@ -139,34 +122,6 @@ module.exports = function(grunt) {
           'build/js/all.js': [ 'build/js/all.full.js' ],
           'build/js/oldbrowsers.js': [ 'build/js/oldbrowsers.js' ]
         }
-      }
-    },
-
-    imagemin: {
-      build: {
-        files: [{
-          expand: true,
-          cwd: 'source/img/',
-          src: ['**/*.{png,jpg,gif}'],
-          dest: 'build/img/'
-        }]
-      }
-    },
-
-    svgmin: {
-      options: {
-        plugins: [
-          { removeViewBox: false },
-          { removeUselessStrokeAndFill: false }
-        ]
-      },
-      build: {
-        files: [{
-          expand: true,
-          cwd: 'source/img',
-          src: ['**/*.svg'],
-          dest: 'build/img/'
-        }]
       }
     },
 
@@ -233,7 +188,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
@@ -241,12 +195,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-banner');
   grunt.loadNpmTasks('grunt-notify');
-  grunt.loadNpmTasks('grunt-svgmin');
   grunt.loadNpmTasks('grunt-uncss');
 
   // Default task(s).
-  // grunt.registerTask('default', ['watch']);
-  // grunt.registerTask('build', ['concat', 'uglify', 'less:production', 'usebanner', 'imagemin']);
 
   grunt.registerTask(
     'default',
@@ -279,18 +230,6 @@ module.exports = function(grunt) {
   );
 
   grunt.registerTask(
-    'media',
-    'Minify all media images and SVG',
-    [
-      'imagemin',
-      'svgmin',
-      // 'grunticon',
-      'clean:media',
-      'notify:media'
-    ]
-  );
-
-  grunt.registerTask(
     'build',
     'Compile all assets from source into build',
     [
@@ -298,7 +237,6 @@ module.exports = function(grunt) {
       'copy',
       'stylesheets',
       'scripts',
-      // 'media',
       'usebanner',
       'notify:build'
     ]

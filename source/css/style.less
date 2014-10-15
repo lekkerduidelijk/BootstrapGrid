@@ -1,46 +1,42 @@
 /**
- * Less Template
+ * BootstrapGrid
  * @author: Rutger Laurman - lekkerduidelijk.nl
- * @url: https://github.com/lekkerduidelijk/less-template
+ * @url: https://github.com/lekkerduidelijk/BootstrapGrid
  */
 
 @bowerpath: "../../bower_components/";
 
-// Import Normalize
-// @import (less) "@{bowerpath}normalize-css/normalize.css";
-
 // Import Bootstrap
 @import "@{bowerpath}bootstrap/less/bootstrap";
 
-// Settings
-// @import "variables";
-
 // Base
-// @import "mixins";
-//@import "base";
-
-// Layout
-// @import "layout/l-header";
-// @import "layout/l-footer";
-
-// Modules
-// @import "module/nav";
-
-
-.block {
-  background: #ccc;
-  //border: 2px solid #999;
-  display: block;
-  min-height: 50px;
-  height: auto;
-  width: 100%;
-  margin: 10px 0;
-//  overflow: hidden;
-float: left;
-}
 h2 {
   text-align: center;
 }
+header {
+  text-align: center;
+}
+footer {
+  margin-top: 40px;
+  padding: 40px 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e5e5e5
+}
+
+// Block element
+.block {
+  background: #ccc;
+  display: block;
+  float: left;
+  height: auto;
+  margin: 10px 0;
+  min-height: 50px;
+  width: 100%;
+}
+
+// Layout
 .container-1170 {
   max-width: 1170px;
   margin: 0 auto;
@@ -56,26 +52,11 @@ h2 {
     max-width: 970px !important;
   }
 }
+
 .container-750 {
   max-width: 750px;
   margin: 0 auto;
   > .container {
     max-width: 750px !important;
   }
-}
-
-
-img {
-  //.img-responsive;
-}
-header {
-  text-align: center;
-}
-footer {
-  margin-top: 40px;
-  padding: 40px 0;
-  color: #999;
-  text-align: center;
-  background-color: #f9f9f9;
-  border-top: 1px solid #e5e5e5
 }

@@ -1,7 +1,7 @@
 /**
- * Less Template
+ * BootstrapGrid
  * @author: Rutger Laurman - lekkerduidelijk.nl
- * @url: https://github.com/lekkerduidelijk/less-template
+ * @url: https://github.com/lekkerduidelijk/BootstrapGrid
  */
 
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
@@ -1334,39 +1334,13 @@ p {
 
 /* line 10, /www/labs/bootstrapgrid/bower_components/bootstrap/less/component-animations.less */
 
-.fade {
-  opacity: 0;
-  -webkit-transition: opacity 0.15s linear;
-  transition: opacity 0.15s linear;
-}
-
 /* line 13, /www/labs/bootstrapgrid/bower_components/bootstrap/less/component-animations.less */
-
-.fade.in {
-  opacity: 1;
-}
 
 /* line 18, /www/labs/bootstrapgrid/bower_components/bootstrap/less/component-animations.less */
 
-.collapse {
-  display: none;
-}
-
 /* line 20, /www/labs/bootstrapgrid/bower_components/bootstrap/less/component-animations.less */
 
-.collapse.in {
-  display: block;
-}
-
 /* line 24, /www/labs/bootstrapgrid/bower_components/bootstrap/less/component-animations.less */
-
-.collapsing {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  -webkit-transition: height 0.35s ease;
-  transition: height 0.35s ease;
-}
 
 @font-face {
   font-family: 'Glyphicons Halflings';
@@ -2063,13 +2037,6 @@ p {
 
   /* line 69, /www/labs/bootstrapgrid/bower_components/bootstrap/less/navbar.less */
 
-  .navbar-collapse.collapse {
-    display: block !important;
-    height: auto !important;
-    padding-bottom: 0;
-    overflow: visible !important;
-  }
-
   /* line 76, /www/labs/bootstrapgrid/bower_components/bootstrap/less/navbar.less */
 
   /* line 82, /www/labs/bootstrapgrid/bower_components/bootstrap/less/navbar.less */
@@ -2439,13 +2406,6 @@ p {
 
 /* line 44, /www/labs/bootstrapgrid/bower_components/bootstrap/less/alerts.less */
 
-.alert-dismissable .close {
-  position: relative;
-  top: -2px;
-  right: -21px;
-  color: inherit;
-}
-
 /* line 56, /www/labs/bootstrapgrid/bower_components/bootstrap/less/alerts.less */
 
 /* line 431, /www/labs/bootstrapgrid/bower_components/bootstrap/less/mixins.less */
@@ -2728,208 +2688,54 @@ p {
 
 /* line 6, /www/labs/bootstrapgrid/bower_components/bootstrap/less/close.less */
 
-.close {
-  float: right;
-  font-size: 21px;
-  font-weight: bold;
-  line-height: 1;
-  color: #000000;
-  text-shadow: 0 1px 0 #ffffff;
-  opacity: 0.2;
-  filter: alpha(opacity=20);
-}
-
 /* line 15, /www/labs/bootstrapgrid/bower_components/bootstrap/less/close.less */
-
-.close:hover,
-.close:focus {
-  color: #000000;
-  text-decoration: none;
-  cursor: pointer;
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-}
 
 /* line 26, /www/labs/bootstrapgrid/bower_components/bootstrap/less/close.less */
 
-button.close {
-  padding: 0;
-  cursor: pointer;
-  background: transparent;
-  border: 0;
-  -webkit-appearance: none;
-}
-
 /* line 11, /www/labs/bootstrapgrid/bower_components/bootstrap/less/modals.less */
-
-.modal-open {
-  overflow: hidden;
-}
 
 /* line 16, /www/labs/bootstrapgrid/bower_components/bootstrap/less/modals.less */
 
-.modal {
-  display: none;
-  overflow: auto;
-  overflow-y: scroll;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1050;
-  -webkit-overflow-scrolling: touch;
-  outline: 0;
-}
-
 /* line 33, /www/labs/bootstrapgrid/bower_components/bootstrap/less/modals.less */
-
-.modal.fade .modal-dialog {
-  -webkit-transform: translate(0, -25%);
-  -ms-transform: translate(0, -25%);
-  transform: translate(0, -25%);
-  -webkit-transition: -webkit-transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
-}
 
 /* line 37, /www/labs/bootstrapgrid/bower_components/bootstrap/less/modals.less */
 
-.modal.in .modal-dialog {
-  -webkit-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  transform: translate(0, 0);
-}
-
 /* line 41, /www/labs/bootstrapgrid/bower_components/bootstrap/less/modals.less */
-
-.modal-dialog {
-  position: relative;
-  width: auto;
-  margin: 10px;
-}
 
 /* line 48, /www/labs/bootstrapgrid/bower_components/bootstrap/less/modals.less */
 
-.modal-content {
-  position: relative;
-  background-color: #ffffff;
-  border: 1px solid #999999;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 6px;
-  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
-  background-clip: padding-box;
-  outline: none;
-}
-
 /* line 61, /www/labs/bootstrapgrid/bower_components/bootstrap/less/modals.less */
-
-.modal-backdrop {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1040;
-  background-color: #000000;
-}
 
 /* line 70, /www/labs/bootstrapgrid/bower_components/bootstrap/less/modals.less */
 
-.modal-backdrop.fade {
-  opacity: 0;
-  filter: alpha(opacity=0);
-}
-
 /* line 71, /www/labs/bootstrapgrid/bower_components/bootstrap/less/modals.less */
-
-.modal-backdrop.in {
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-}
 
 /* line 76, /www/labs/bootstrapgrid/bower_components/bootstrap/less/modals.less */
 
-.modal-header {
-  padding: 15px;
-  border-bottom: 1px solid #e5e5e5;
-  min-height: 16.428571429px;
-}
-
 /* line 82, /www/labs/bootstrapgrid/bower_components/bootstrap/less/modals.less */
-
-.modal-header .close {
-  margin-top: -2px;
-}
 
 /* line 87, /www/labs/bootstrapgrid/bower_components/bootstrap/less/modals.less */
 
-.modal-title {
-  margin: 0;
-  line-height: 1.428571429;
-}
-
 /* line 94, /www/labs/bootstrapgrid/bower_components/bootstrap/less/modals.less */
-
-.modal-body {
-  position: relative;
-  padding: 20px;
-}
 
 /* line 100, /www/labs/bootstrapgrid/bower_components/bootstrap/less/modals.less */
 
-.modal-footer {
-  margin-top: 15px;
-  padding: 19px 20px 20px;
-  text-align: right;
-  border-top: 1px solid #e5e5e5;
-}
-
 /* line 108, /www/labs/bootstrapgrid/bower_components/bootstrap/less/modals.less */
-
-.modal-footer .btn + .btn {
-  margin-left: 5px;
-  margin-bottom: 0;
-}
 
 /* line 113, /www/labs/bootstrapgrid/bower_components/bootstrap/less/modals.less */
 
-.modal-footer .btn-group .btn + .btn {
-  margin-left: -1px;
-}
-
 /* line 117, /www/labs/bootstrapgrid/bower_components/bootstrap/less/modals.less */
-
-.modal-footer .btn-block + .btn-block {
-  margin-left: 0;
-}
 
 @media (min-width: 768px) {
   /* line 125, /www/labs/bootstrapgrid/bower_components/bootstrap/less/modals.less */
 
-  .modal-dialog {
-    width: 600px;
-    margin: 30px auto;
-  }
-
   /* line 129, /www/labs/bootstrapgrid/bower_components/bootstrap/less/modals.less */
 
-  .modal-content {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-  }
-
   /* line 134, /www/labs/bootstrapgrid/bower_components/bootstrap/less/modals.less */
-
-  .modal-sm {
-    width: 300px;
-  }
 }
 
 @media (min-width: 992px) {
   /* line 138, /www/labs/bootstrapgrid/bower_components/bootstrap/less/modals.less */
-
-  .modal-lg {
-    width: 900px;
-  }
 }
 
 /* line 7, /www/labs/bootstrapgrid/bower_components/bootstrap/less/tooltip.less */
@@ -3067,9 +2873,7 @@ button.close {
 .container:before,
 .container:after,
 .row:before,
-.row:after,
-.modal-footer:before,
-.modal-footer:after {
+.row:after {
   content: " ";
   display: table;
 }
@@ -3077,8 +2881,7 @@ button.close {
 /* line 25, /www/labs/bootstrapgrid/bower_components/bootstrap/less/mixins.less */
 
 .container:after,
-.row:after,
-.modal-footer:after {
+.row:after {
   clear: both;
 }
 
@@ -3178,70 +2981,19 @@ button.close {
   /* line 89, /www/labs/bootstrapgrid/bower_components/bootstrap/less/responsive-utilities.less */
 }
 
-/* line 30, /www/labs/bootstrapgrid/source/css/style.less */
-
-.block {
-  background: #ccc;
-  display: block;
-  min-height: 50px;
-  height: auto;
-  width: 100%;
-  margin: 10px 0;
-  float: left;
-}
-
-/* line 41, /www/labs/bootstrapgrid/source/css/style.less */
+/* line 13, /www/labs/bootstrapgrid/source/css/style.less */
 
 h2 {
   text-align: center;
 }
 
-/* line 44, /www/labs/bootstrapgrid/source/css/style.less */
-
-.container-1170 {
-  max-width: 1170px;
-  margin: 0 auto;
-}
-
-/* line 47, /www/labs/bootstrapgrid/source/css/style.less */
-
-.container-1170 > .container {
-  max-width: 1170px !important;
-}
-
-/* line 52, /www/labs/bootstrapgrid/source/css/style.less */
-
-.container-970 {
-  max-width: 970px;
-  margin: 0 auto;
-}
-
-/* line 55, /www/labs/bootstrapgrid/source/css/style.less */
-
-.container-970 > .container {
-  max-width: 970px !important;
-}
-
-/* line 59, /www/labs/bootstrapgrid/source/css/style.less */
-
-.container-750 {
-  max-width: 750px;
-  margin: 0 auto;
-}
-
-/* line 62, /www/labs/bootstrapgrid/source/css/style.less */
-
-.container-750 > .container {
-  max-width: 750px !important;
-}
-
-/* line 71, /www/labs/bootstrapgrid/source/css/style.less */
+/* line 16, /www/labs/bootstrapgrid/source/css/style.less */
 
 header {
   text-align: center;
 }
 
-/* line 74, /www/labs/bootstrapgrid/source/css/style.less */
+/* line 19, /www/labs/bootstrapgrid/source/css/style.less */
 
 footer {
   margin-top: 40px;
@@ -3250,4 +3002,55 @@ footer {
   text-align: center;
   background-color: #f9f9f9;
   border-top: 1px solid #e5e5e5;
+}
+
+/* line 29, /www/labs/bootstrapgrid/source/css/style.less */
+
+.block {
+  background: #ccc;
+  display: block;
+  float: left;
+  height: auto;
+  margin: 10px 0;
+  min-height: 50px;
+  width: 100%;
+}
+
+/* line 40, /www/labs/bootstrapgrid/source/css/style.less */
+
+.container-1170 {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+/* line 43, /www/labs/bootstrapgrid/source/css/style.less */
+
+.container-1170 > .container {
+  max-width: 1170px !important;
+}
+
+/* line 48, /www/labs/bootstrapgrid/source/css/style.less */
+
+.container-970 {
+  max-width: 970px;
+  margin: 0 auto;
+}
+
+/* line 51, /www/labs/bootstrapgrid/source/css/style.less */
+
+.container-970 > .container {
+  max-width: 970px !important;
+}
+
+/* line 56, /www/labs/bootstrapgrid/source/css/style.less */
+
+.container-750 {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+/* line 59, /www/labs/bootstrapgrid/source/css/style.less */
+
+.container-750 > .container {
+  max-width: 750px !important;
 }
